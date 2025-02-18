@@ -28,7 +28,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish
       run: dotnet publish -c Release -o website
-    - name: Upload artifact for deployment job
+    - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.4.3
       with:
         name: webapp
